@@ -19,8 +19,9 @@ html,
 body {
   box-sizing: border-box;
   font-size: 0.833vw;
+  font-family: Uni Sans;
   font-style: normal;
-  font-weight: 400;
+  font-weight: 900;
   line-height: normal;
   height: 100dvh;
   overflow-x: hidden;
@@ -37,6 +38,11 @@ img,
 video {
   max-width: 100%;
   height: auto;
+}
+@font-face {
+  font-family: "Uni Sans";
+  font-weight: 900;
+  src: local("Uni Sans"), url(./fonts/uni_sans_heavy.ttf) format("opentype");
 }
 @media (orientation: portrait) {
   html,

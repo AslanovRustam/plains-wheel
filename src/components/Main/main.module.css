@@ -1,0 +1,24 @@
+.container {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+.plane {
+  position: absolute;
+  pointer-events: none;
+}
+.plane1 {
+  width: 91em;
+  bottom: 0;
+  z-index: 1;
+}
+.plane2 {
+  width: 25.75em;
+  bottom: 34em;
+  left: 12em;
+}
+.plane3 {
+  width: 36.69em;
+  bottom: 36em;
+  left: 27em;
+}
