@@ -18,6 +18,7 @@ export default function Modal({ onClose, count, setCount, showModal }) {
       document.body.classList.remove(s.overvlow);
     };
   }, []);
+
   function CloseAndSpin() {
     if (count === 0) {
       return;
@@ -32,7 +33,7 @@ export default function Modal({ onClose, count, setCount, showModal }) {
       onClick={() => CloseAndSpin()}
     >
       <div className={s.container}>
-        {count === 0 && (
+        {count !== 1 && (
           <>
             <img className={`${s.coin} ${s.coin1}`} src={coin} alt="coin" />
             <img className={`${s.coin} ${s.coin2}`} src={coin2} alt="coin2" />
@@ -59,7 +60,7 @@ export default function Modal({ onClose, count, setCount, showModal }) {
             </>
           )}
         </p>
-        <div className={s.btn} onClick={() => setCount(count - 1)}>
+        <div className={s.btn} onClick={setCount}>
           JOGAR
         </div>
       </div>

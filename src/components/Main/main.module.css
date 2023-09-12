@@ -49,6 +49,7 @@
 @media (orientation: portrait) {
   .plane1 {
     right: -29em;
+    bottom: 4em;
   }
   .plane2 {
     top: 1em;

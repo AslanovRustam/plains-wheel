@@ -16,6 +16,7 @@ export default function Wheel() {
       setTimeout(() => togleModal(), 5000);
     }
     if (count === 0) {
+      console.log("useEffect", useEffect);
       setTimeout(() => togleModal(), 7000);
     }
   }, [count]);
@@ -23,20 +24,20 @@ export default function Wheel() {
     return setShowModal(!showModal);
   }
   const handleButtonClick = () => {
-    if (isButtonDisabled) {
+    if (isButtonDisabled || count === 0) {
       return;
     }
     setIsButtonDisabled(true);
 
-    setCount(count + 1);
+    setCount(count - 1);
 
     setTimeout(() => {
       setIsButtonDisabled(false);
     }, 3500);
 
-    if (count === 1) {
-      setTimeout(() => setShowModal(true), 4000);
-    }
+    // if (count === 1) {
+    //   setTimeout(() => setShowModal(true), 4000);
+    // }
   };
   console.log("count", count);
   return (
@@ -53,7 +54,7 @@ export default function Wheel() {
         className={s.btnSpin}
         src={btnSpin}
         alt="btnSpin"
-        onClick={() => setCount(count - 1)}
+        onClick={handleButtonClick}
       />
       <div className={s.btn} onClick={handleButtonClick}>
         RODAR
@@ -61,7 +62,7 @@ export default function Wheel() {
       <Modal
         onClose={togleModal}
         count={count}
-        setCount={setCount}
+        setCount={handleButtonClick}
         showModal={showModal}
       />
     </div>

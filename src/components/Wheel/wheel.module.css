@@ -98,7 +98,8 @@
   }
   .btn {
     font-size: 4em;
-    bottom: unset;
+    /* bottom: unset; */
+    bottom: -1em;
     right: 2.9em;
   }
   .eclipse {
