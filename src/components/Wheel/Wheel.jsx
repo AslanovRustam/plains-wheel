@@ -9,6 +9,8 @@ import Modal from "../Modal/Modal";
 export default function Wheel() {
   const [count, setCount] = useState(2);
   const [showModal, setShowModal] = useState(false);
+  const [isButtonDisabled, setIsButtonDisabled] = useState(false);
+
   useEffect(() => {
     if (count === 1) {
       setTimeout(() => togleModal(), 5000);
@@ -20,6 +22,22 @@ export default function Wheel() {
   function togleModal() {
     return setShowModal(!showModal);
   }
+  const handleButtonClick = () => {
+    if (isButtonDisabled) {
+      return;
+    }
+    setIsButtonDisabled(true);
+
+    setCount(count + 1);
+
+    setTimeout(() => {
+      setIsButtonDisabled(false);
+    }, 3500);
+
+    if (count === 1) {
+      setTimeout(() => setShowModal(true), 4000);
+    }
+  };
   console.log("count", count);
   return (
     <div className={s.container}>
@@ -37,7 +55,7 @@ export default function Wheel() {
         alt="btnSpin"
         onClick={() => setCount(count - 1)}
       />
-      <div className={s.btn} onClick={() => setCount(count - 1)}>
+      <div className={s.btn} onClick={handleButtonClick}>
         RODAR
       </div>
       <Modal

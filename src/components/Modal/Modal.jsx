@@ -44,7 +44,7 @@ export default function Modal({ onClose, count, setCount, showModal }) {
         {count === 1 && (
           <img className={s.popUp} src={popup_loose} alt="lose" />
         )}
-        {count === 0 && <img className={s.popUp} src={popup_win} alt="win" />}
+        {count !== 1 && <img className={s.popUp} src={popup_win} alt="win" />}
         <p className={s.text}>
           {count === 1 && (
             <>
@@ -52,7 +52,7 @@ export default function Modal({ onClose, count, setCount, showModal }) {
               da Play'n GO
             </>
           )}
-          {count === 0 && (
+          {count !== 1 && (
             <>
               GANHOU!<br></br> Junte-se à LEON hoje e<br></br> receba um Bónus
               até 500 €

@@ -72,9 +72,37 @@
 .coin {
   position: absolute;
   animation: 2s levitate ease-in-out infinite alternate;
+  z-index: 1;
 }
 .coin1 {
-  top: -3em;
+  width: 8.1875em;
+  top: -10em;
+  right: 4em;
+}
+.coin2 {
+  width: 4.75em;
+  top: -21em;
+  left: 4em;
+  animation-delay: 1s;
+}
+.coin3 {
+  width: 8.0625em;
+  top: -35em;
+  right: 17em;
+  animation-delay: 2s;
+}
+.coin4 {
+  width: 4.25em;
+  top: -25em;
+  right: 5em;
+  animation-delay: 3s;
+}
+.coin5 {
+  width: 6.875em;
+  top: -10em;
+  left: 1em;
+  z-index: 0;
+  animation-delay: 4s;
 }
 @keyframes levitate {
   from {
