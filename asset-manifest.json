@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/plains-wheel/static/css/main.fee50d44.css",
-    "main.js": "/plains-wheel/static/js/main.838f3f89.js",
+    "main.css": "/plains-wheel/static/css/main.7e377b11.css",
+    "main.js": "/plains-wheel/static/js/main.92fcf9be.js",
     "static/media/bg.png": "/plains-wheel/static/media/bg.539a38d24e831f7fc72a.png",
     "static/media/wheel.png": "/plains-wheel/static/media/wheel.576437ddaee8a7143a6c.png",
     "static/media/plane1.png": "/plains-wheel/static/media/plane1.2654c90a276f69f16299.png",
@@ -14,11 +14,11 @@
     "static/media/popup_btn_bg.png": "/plains-wheel/static/media/popup_btn_bg.f0710fec3cb7cd6b7b37.png",
     "static/media/plane2.png": "/plains-wheel/static/media/plane2.1d2ed6113fe521dda24b.png",
     "index.html": "/plains-wheel/index.html",
-    "main.fee50d44.css.map": "/plains-wheel/static/css/main.fee50d44.css.map",
-    "main.838f3f89.js.map": "/plains-wheel/static/js/main.838f3f89.js.map"
+    "main.7e377b11.css.map": "/plains-wheel/static/css/main.7e377b11.css.map",
+    "main.92fcf9be.js.map": "/plains-wheel/static/js/main.92fcf9be.js.map"
   },
   "entrypoints": [
-    "static/css/main.fee50d44.css",
-    "static/js/main.838f3f89.js"
+    "static/css/main.7e377b11.css",
+    "static/js/main.92fcf9be.js"
   ]
 }
